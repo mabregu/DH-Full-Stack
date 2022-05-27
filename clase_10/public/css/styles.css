@@ -1,0 +1,49 @@
+body{
+    color: black;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: lightgrey;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+main.index{
+    display: block;
+    width: 88.5%;
+    text-align: center;
+    position: absolute;
+    top: 25%;
+    color: gray;
+    padding-right: 20%;
+}
+main.index h1{
+    color: lightgray;
+}
+img{
+    width: 100%;
+}
+p.index{
+    padding-left: 30%;
+    padding-right: 30%;
+
+}
+div.container{
+    overflow: hidden;
+    padding-top:30px;
+    
+}
+div.imagen{
+    
+    width: 30%;
+    float: left;
+    
+}
+div.detail{
+    padding-left: 5%;
+    width: 65%;
+    float: left;
+    
+
+}
+main ul li a{
+    text-decoration: none;
+    color: gray;
+}
