@@ -9,6 +9,6 @@ app.get('/', (req, res) => {
     res.sendFile(path.resolve(__dirname, './views/home.html'));
 });
 
-app.listen(3000, () => {
-    console.log('listening on http://localhost:3000');
+app.listen(4000, () => {
+    console.log('listening on http://localhost:4000');
 });

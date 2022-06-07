@@ -25,6 +25,74 @@ h3 {
     font-size: 16px;
 }
 
+h3,
 .descripciones {
+    color: #666;
     font-size: 16px;
+}
+
+div.top-header{
+    padding: 5%;
+}
+
+header div.logo{
+    width: 50%;
+}
+
+header ul li{
+    list-style-type: none;
+}
+
+header .form .input{
+    background-color: #FFF;
+    border: 1px solid #000;
+    outline: none;
+    color: #666;
+    padding: 2px;
+}
+
+header div.top-header p{
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+}
+
+div.burger-menu{
+    text-align: center;
+}
+
+div.burger-menu i{
+    background-color: #0044AA;
+    border-radius: 5px;
+    color: #FFF;
+    font-size: 20px;
+    height: 40px;
+    margin: 10px 0px 20px 0px;
+    padding: 10px;
+    width: 40px;
+}
+
+article div.main-article{
+    width: 100%;
+}
+
+section.banner img{
+    width: 100%;
+}
+
+main{
+    width: 90%;
+}
+
+main section article{
+    background-color: #fff;
+}
+
+main section article img{
+    width: 100%;
+}
+
+main section article i,
+.descuentos {
+    color: #39b54a;
 }
