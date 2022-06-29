@@ -1,0 +1,125 @@
+*, ::before, ::after {
+    box-sizing: inherit;
+}
+.mvc-top, .mvc-bottom {
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+.mvc-bar {
+    width: 100%;
+    overflow: hidden;
+}
+body,h1,h2,h3,h4,h5,h6 {
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    margin: 10px 0;
+}
+h3 {
+    font-size: 24px;
+}
+body,
+html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+.mvc-padding-16 {
+    padding-top: 16px !important;
+    padding-bottom: 16px !important;
+}
+.mvc-padding-64 {
+    padding-top: 64px !important;
+    padding-bottom: 64px !important;
+}
+.mvc-display-container {
+    position: relative;
+}
+.mvc-display-middle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.mvc-black, .mvc-hover-black:hover {
+    color: #fff !important;
+    background-color: #000 !important;
+}
+.mvc-wide {
+    letter-spacing: 10px;
+}
+.mvc-black, .mvc-hover-black:hover {
+    color: #fff !important;
+}
+.mvc-center {
+    text-align: center !important;
+}
+.mvc-padding-large {
+    padding: 12px 24px !important;
+}
+.mvc-xlarge {
+    font-size: 24px !important;
+}
+.mvc-container {
+    padding: 33.01em 167px;
+}
+.mvc-container-img {
+    display: flex;
+    align-items: stretch;
+    justify-content:space-evenly;
+}
+.mvc-img {
+    width: 250px;
+}
+.bgimg-1,
+.bgimg-2{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.bgimg-1 {
+    background-image: url("/images/hedgehog.jpg");
+    min-height: 100%;
+}
+
+.bgimg-2 {
+    background-image: url("/images/lights.jpg");
+    min-height: 400px;
+}
+
+.mvc-wide {
+    letter-spacing: 10px;
+}
+.mvc-hover-opacity {
+    cursor: pointer;
+}
+
+.mvc-button:hover {
+    color: #000 !important;
+    background-color: #ccc !important;
+}
+
+.mvc-bar .mvc-button {
+    white-space: normal;
+}
+
+.mvc-bar .mvc-bar-item {
+    padding: 8px 16px;
+    float: left;
+    width: auto;
+    border: none;
+    display: block;
+    outline: 0;
+}
+
+@media only screen and (max-device-width: 1600px) {
+    .bgimg-1,
+    .bgimg-2,
+    .bgimg-3 {
+    background-attachment: scroll;
+    min-height: 400px;
+    }
+}
