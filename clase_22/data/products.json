@@ -1,11 +1,6 @@
 [
   {
-    "titulo": "Otra cosa",
-    "currency": "U$S",
-    "price": "150",
-    "description": "Entrada Carpaccio de salmón con cítricos"
-  },
-  {
+    "id": "2",
     "titulo": "Risotto de berenjena al escabeche",
     "currency": "U$S",
     "price": "50",
@@ -14,8 +9,8 @@
   {
     "titulo": "Mousse de arroz",
     "currency": "$",
-    "price": "27.50",
-    "description": "Rico rico",
+    "price": "150",
+    "description": "Rico rico ricoooo",
     "id": "3"
   },
   {
@@ -47,5 +42,12 @@
     "price": "1500",
     "description": "Un pizza rica",
     "id": "070f7c58-3fcc-413b-806a-332de93cf55b"
+  },
+  {
+    "titulo": "Hamburguesa",
+    "currency": "$",
+    "price": "1900",
+    "description": "Un pizza rica",
+    "id": "070f7z96-3fce-513b-806a-332de93jh46v"
   }
 ]

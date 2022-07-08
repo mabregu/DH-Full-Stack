@@ -1316,3 +1316,8 @@ a {
 .ps-hover-border-pale-blue:hover {
   border-color: #e7ffff !important;
 }
+
+.ps-btn-danger {
+  background-color: #f44336 !important;
+  border-color: #f44336 !important;
+}

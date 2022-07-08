@@ -44,12 +44,6 @@ const productsController = {
 
         newProduct.id = id;
 
-        let productEdit = productList.find(product => product.id == id);
-
-        console.log("editando", productEdit);
-
-        console.log("new values", newProduct);
-
         for (let index = 0; index < productList.length; index++) {
             const element = productList[index];
             if (element.id == id) {
@@ -62,7 +56,18 @@ const productsController = {
         res.redirect('/products');
     },
     deleteProduct: (req, res) => {
-        res.send('Delete a product');
+        let id = req.params.id;
+        console.log("deleteProduct", id);
+        for (let index = 0; index < productList.length; index++) {
+            const element = productList[index];
+            if (element.id == id) {
+                productList.splice(index, 1);
+            }
+        }
+
+        fs.writeFileSync(productListPath, JSON.stringify(productList, null, 2));
+
+        res.redirect('/products');
     }
 }
 

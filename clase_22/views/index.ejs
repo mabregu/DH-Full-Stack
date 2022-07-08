@@ -59,6 +59,15 @@
                 <%= menu[index].price %>
               </p>
             </a>
+            <!-- eliminar producto -->
+            <form
+              action="/products/<%= menu[index].id %>?_method=DELETE" 
+              method="post"
+            >
+              <button type="submit" 
+                class="ps-btn ps-btn-danger"
+              >Eliminar</button>
+            </form>
             <br />
           <% } %>
         </div>
