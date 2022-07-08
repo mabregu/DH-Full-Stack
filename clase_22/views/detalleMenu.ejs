@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <%- include('./partials/head') %>
+  <body>
+    <%- include("./partials/header") %>
+
+    <!-- Page content -->
+    <div class="ps-content">
+
+      <!-- Menu Section -->
+      <div class="ps-row ps-padding-64" id="menu">
+        <div class="ps-col l6 ps-padding-large">
+          <h1 class="ps-center"><%= plato.titulo %></h1>
+          <br />
+          <h4><%= plato.description %></h4>
+          <p class="ps-text-grey">
+            <%= plato.currency %>
+            <%= plato.price %>
+          </p>
+        </div>
+
+        <div class="ps-col l6 ps-padding-large ps-img-menu">
+          <img
+            src="/images/<%= plato.image %>"
+            class="ps-round ps-image ps-opacity-min"
+            alt="Menu"
+          />
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <%- include("./partials/footer") %>
+    </div>
+  </body>
+</html>
