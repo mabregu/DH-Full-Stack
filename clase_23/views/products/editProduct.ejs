@@ -1,0 +1,28 @@
+<h1>Editar producto <%= menu.titulo ?? ''%> </h1>
+
+<form 
+    action="/products/<%= menu.id ?? ''%>?_method=PUT" 
+    method="post"
+>
+    <input type="text" 
+        name="titulo"
+        placeholder="Title"
+        value="<%= menu.titulo ?? ''%>"
+    >
+    <input type="text" 
+        name="currency" 
+        placeholder="Currency"
+        value="<%= menu.currency ?? ''%>"
+    >
+    <input type="text" 
+        name="price" 
+        placeholder="Price"
+        value="<%= menu.price ?? ''%>"
+    >
+    <input type="text" 
+        name="description" 
+        placeholder="Description"
+        value="<%= menu.description ?? ''%>"
+    >
+    <input type="submit" value="Update">
+</form>
