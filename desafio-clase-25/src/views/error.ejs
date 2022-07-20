@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Houston - ¡We have an ERROR!</title>
+	<style>
+		html, body {
+			font-size: 10px;
+			font-family: sans-serif;
+			background-color: #dddddd;
+		}
+		h1 {
+			font-size: 3.2em;
+		}
+		h2 {
+			font-size: 2.4em;
+		}
+		pre {
+			color: crimson;
+			border: solid 1px crimson;
+			display: block;
+			padding: 10px;
+			border-radius: 10px;
+			font-size: 1.4em;
+		}
+		pre::first-line {
+			font-weight: bold;
+		}
+		p {
+			font-size: 1.5em;
+		}
+	</style>
+</head>
+<body>
+	<h1><%= message %></h1>
+	<h2><%= error.status %></h2>
+	<p>Error trying to access to: <b><%= path %></b></p>
+	<pre><i><%= error.stack %></i></pre>
+</body>
+</html>
