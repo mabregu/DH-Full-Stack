@@ -1,0 +1,32 @@
+<form action="/products" method="post" enctype="multipart/form-data">
+    <input type="text" 
+        name="titulo" 
+        value="<%= locals.old && locals.old.titulo ? locals.old.titulo : '' %>"
+        placeholder="Title"
+    >
+    <% if (locals.errors && locals.errors.titulo) { %>
+        <span class="error"><%= locals.errors.titulo.msg %></span>
+    <% } %>
+    <br>
+    <input type="text" name="currency" placeholder="Currency">
+    <br>
+    <input type="text" 
+        value="<%= locals.old && locals.old.price ? locals.old.price : '' %>"
+        name="price" 
+        placeholder="Price"
+    >
+    <% if (locals.errors && locals.errors.price) { %>
+        <span class="error"><%= locals.errors.price.msg %></span>
+    <% } %>
+    <br>
+    <input type="text" name="description" placeholder="Description">
+    <br>
+
+    <label for="image">Subir imagen</label>
+    <input type="file" name="image" id="image" multiple>
+    <% if (locals.errors && locals.errors.image) { %>
+        <span class="error"><%= locals.errors.image.msg %></span>
+    <% } %>
+    <br>
+    <input type="submit" value="Create">
+</form>

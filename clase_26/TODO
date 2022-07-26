@@ -1,0 +1,5 @@
+1. Registro de usuario
+    propiedades:
+        - nombre
+        - email
+        - password
