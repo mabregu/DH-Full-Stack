@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie add</title>
+    <link rel='stylesheet' href='/css/style.css' />
+</head>
+
+<body>
+    <figure>
+        <img src="/img/logo-DH.png" alt="Logo Digital House">
+      </figure>
+    <h1 class="titulo">Agregar Película</h1>
+    <br>
+    <section class="formulario">
+        <form action="/movies/create" method="POST">
+            <label for="title">Title </label>
+            <p><input type="text" name="title" id="" required></p>
+            <label for="rating">Rating </label>
+            <p><input type="number" name="rating" id="" required> </p>
+            <label for="awards">Awards </label>
+            <p><input type="number" name="awards" id="" required></p>
+            <label for="release_date">Release date </label>
+            <p><input type="date" name="release_date" id="" required></p>
+            <label for="length">Length </label>
+            <p><input type="number" name="length" id="" required></p>
+            <label for="genreID">Genre </label>
+            <p>
+                <select name="genre_id" id="" required>
+                    <option value="" disabled selected>- select genre - </option>
+                    <% allGenres.forEach(genre => { %>
+                    <option value="<%= genre.id %>"><%= genre.name %></option>
+                    <% }); %>
+                </select>
+            </p>
+            <br>
+            <p> <button class="botonAgregar" type="submit">Agregar</button>
+            
+            <a  class="botonVolver" href="/movies">Listado de Películas</a></p>
+        </form>
+    </section>
+    
+</body>
+
+</html>

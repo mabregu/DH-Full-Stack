@@ -1,0 +1,45 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+  text-decoration: none;
+}
+img{
+  width: 100%;
+}
+figure{
+  width: 20%;
+}
+.titulo{
+  text-align: center;
+}
+.botonAgregar , .botonModificar{
+  color: white;
+  background-color: green;
+  padding: 10px;
+  border-radius: 10px;
+}
+.botonBorrar{
+  color: white;
+  background-color: red;
+  padding: 10px;
+  border-radius: 10px;
+}
+.botonVolver{
+  color: white;
+  background-color: #00B7FF;
+  padding: 10px;
+  border-radius: 10px;
+}
+.formulario{
+  margin: auto;
+  width: 20%;
+}
