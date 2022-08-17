@@ -59,18 +59,20 @@ const productsController = {
         let id = req.params.id;
         let newProduct = req.body;
 
+        console.log("updateProduct", newProduct);
+
         newProduct.id = id;
 
-        for (let index = 0; index < productList.length; index++) {
-            const element = productList[index];
-            if (element.id == id) {
-                productList[index] = newProduct;
-            }
-        }
+        // for (let index = 0; index < productList.length; index++) {
+        //     const element = productList[index];
+        //     if (element.id == id) {
+        //         productList[index] = newProduct;
+        //     }
+        // }
 
-        fs.writeFileSync(productListPath, JSON.stringify(productList, null, 2));
+        // fs.writeFileSync(productListPath, JSON.stringify(productList, null, 2));
 
-        res.redirect('/products');
+        res.redirect('/');
     },
     deleteProduct: (req, res) => {
         let id = req.params.id;
