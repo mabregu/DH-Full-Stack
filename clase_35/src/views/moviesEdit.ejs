@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title class="titulo">Editar Película</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <figure>
+        <img src="/img/logo-DH.png" alt="Logo Digital House">
+      </figure>
+    <h1 class="titulo">Película Editada:  <%= Movie.title %></h1>
+    <section class="formulario">
+        <form action="/movies/update/<%= Movie.id %>?_method=PUT" method="POST">
+            <label for="title">Título </label>
+            <p><input type="text" name="title" id="" value="<%= Movie.title %>" required></p>
+            <label for="rating">Calificación </label>
+            <p><input type="number" name="rating" id="" value="<%= Movie.rating %>" required></p>
+            <label for="awards">Premios </label>
+            <p><input type="number" name="awards" id="" value="<%= Movie.awards %>" required></p>
+            <label for="release_date">Fecha de creación </label>
+            <p><input type="date" name="release_date" id="" value="<%= Movie.release_date %> required"></p>
+            <label for="length">Duración </label>
+            <p><input type="number" name="length" id="" value="<%= Movie.length %>" required></p>
+            <label for="genre_id">Género </label>
+            <p>
+                <select name="genre_id" id="" required>
+                    <% allGenres.forEach(genre => { %>
+                    <option value="<%= genre.id %>" <% if (Movie.genre.id == genre.id) { %><%= 'selected' %><% }; %>><%= genre.name %></option>
+                    <% }); %>
+                </select>
+            </p>
+
+    <!--
+            <label for="genre_id">Genre ID </label>
+            <p><input type="number" name="genre_id" id="" value="<%= Movie.genre_id %>"></p>
+        -->
+            
+            <br>
+            <p> <button class="botonAgregar" type="submit">Actualizar</button>
+        
+            <a  class="botonVolver" href="/movies">Listado de Películas</a></p>
+        </form>
+    </section>
+</body>
+
+</html>
