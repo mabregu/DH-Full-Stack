@@ -8,6 +8,10 @@ router.get('/', moviesAPIController.list);
 // Detalle del movieo
 router.get('/:id', moviesAPIController.detail);
 // Crear movie
-router.post('/create', moviesAPIController.create);
+router.post('/', moviesAPIController.create);
+// Actualizar movie
+router.put('/:id', moviesAPIController.update);
+// Eliminar movie
+router.delete('/:id', moviesAPIController.destroy);
 
 module.exports = router;
