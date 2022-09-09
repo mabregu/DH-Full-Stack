@@ -12,6 +12,21 @@ const Actors = db.Actor;
 
 
 const moviesAPIController = {
+    search: async (req, res) => {
+        let movie = await db.Movie.findAll({
+            where: {
+                // [Op.like]: '%hat',   // LIKE '%hat'
+                title: {
+                    [db.Sequelize.Op.like]: '%'+req.body.title+'%'
+                },
+                awards: {
+                    [db.Sequelize.Op.gte]: req.body.awards
+                }
+            }
+        })
+
+        res.json({ movie });
+    },
     'list': (req, res) => {
         db.Movie.findAll({
             include: ['genre']
